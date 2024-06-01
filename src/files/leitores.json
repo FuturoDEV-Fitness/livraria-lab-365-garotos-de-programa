@@ -1,1 +1,29 @@
-[]
+[
+  {
+    "codigo": "d499a60e-9530-47c6-80e5-6f1ed60d17b8",
+    "nome": "Andy Bogard",
+    "rg": "753951",
+    "cpf": "123.456.789-10",
+    "data_nascimento": "26/01/2000"
+  },
+  {
+    "codigo": "b459f3a1-892a-42e5-967b-5f88c3fe1e25",
+    "nome": "Terry Bogard",
+    "rg": "846275",
+    "cpf": "987.654.321-01",
+    "data_nascimento": "15/03/1997"
+  },
+  {
+    "codigo": "c3782bb2-6c46-48f3-a2c8-d77e82eaa1aa",
+    "nome": "Kyo Kusanagi",
+    "rg": "369852",
+    "cpf": "456.789.123-45",
+    "data_nascimento": "12/12/1995"
+  },
+  {
+    "codigo": "591b7999-7391-46af-864d-0ea74fbdc913",
+    "nome": "Iori Yagami",
+    "rg": "987456",
+    "data_nascimento": "12/12/1996"
+  }
+]
