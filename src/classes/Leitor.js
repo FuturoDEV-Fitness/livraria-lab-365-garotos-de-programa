@@ -1,51 +1,51 @@
+const crypto = require("crypto");
+
 class Leitor {
-  #codigo = 0;
+  #codigo = "";
   #nome = "";
   #rg = "";
   #cpf = "";
   #data_nascimento = "";
-  constructor(codigo, nome, rg, cpf, data_nascimento) {
-    this.#codigo = codigo;
+
+  constructor(nome, rg, cpf, data_nascimento) {
+    this.#codigo = crypto.randomUUID();
     this.#nome = nome;
     this.#rg = rg;
     this.#cpf = cpf;
     this.#data_nascimento = data_nascimento;
   }
-  get codigo() {
+
+  get getCodigo() {
     return this.#codigo;
   }
-
-  set codigo(value) {
-    this.#codigo = value;
-  }
-
-  get nome() {
+  get getNome() {
     return this.#nome;
   }
 
-  set nome(value) {
+  set setNome(value) {
     this.#nome = value;
   }
 
-  get rg() {
+  get getRg() {
     return this.#rg;
   }
-  set rg(value) {
+  set setRg(value) {
     this.#rg = value;
   }
 
-  get cpf() {
+  get getCpf() {
     return this.#cpf;
   }
 
-  set cpf(value) {
+  set setCpf(value) {
     this.#cpf = value;
   }
 
-  get data_nascimento() {
+  get getData_nascimento() {
     return this.#data_nascimento;
   }
-  set data_nascimento(value) {
+
+  set setData_nascimento(value) {
     this.#data_nascimento = value;
   }
 }
