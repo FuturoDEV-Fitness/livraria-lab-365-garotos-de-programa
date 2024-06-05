@@ -26,12 +26,22 @@ async function run() {
             rl.close();
             break;
         case 'deletar': {
-            /* Coloque sua resposta aqui */
+            const codigoInstrumento = await rl.question("Qual o código do instrumento? ")
+            
+            const instrumentoCrud = new InstrumentoCrud()
+
+            instrumentoCrud.deletar(codigoInstrumento)
+            
             rl.close();
             break;
         }
         case 'consultar': {
-            /* Coloque sua resposta aqui */
+            const instrumento = await rl.question("Qual o nome do instrumento? ")
+            
+            const instrumentoCrud = new InstrumentoCrud()
+
+            instrumentoCrud.consultar(instrumento)
+
             rl.close();
             break;
         }
